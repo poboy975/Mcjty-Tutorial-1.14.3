@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component>
+  <configuration default="false" factoryName="Application" name="runClient" singleton="false" type="Application">
+    <option name="MAIN_CLASS_NAME" value="net.minecraftforge.userdev.LaunchTesting"/>
+    <option name="VM_PARAMETERS" value="-Dforge.logging.console.level=debug -Dforge.logging.markers=SCAN,REGISTRIES,REGISTRYDUMP -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump &quot;-Dos.name=Windows 10&quot; -Dos.version=10.0"/>
+    <option name="PROGRAM_PARAMETERS" value=""/>
+    <option name="WORKING_DIRECTORY" value="C:\Coding\Forge Projects\Mcjty-Tutorial-1.14.3\run"/>
+    <module name="Mcjty-Tutorial-1.14.3_main"/>
+    <envs>
+      <env name="MOD_CLASSES" value="examplemod%%C:\Coding\Forge Projects\Mcjty-Tutorial-1.14.3\build\resources\main;examplemod%%C:\Coding\Forge Projects\Mcjty-Tutorial-1.14.3\build\classes\java\main"/>
+      <env name="MCP_MAPPINGS" value="snapshot_20190621-1.14.2"/>
+      <env name="MCP_VERSION" value="20190624.152911"/>
+      <env name="FORGE_VERSION" value="27.0.56"/>
+      <env name="assetIndex" value="1.14"/>
+      <env name="assetDirectory" value="C:\Users\durlo\.gradle\caches\forge_gradle\assets"/>
+      <env name="nativesDirectory" value="C:\Coding\Forge Projects\Mcjty-Tutorial-1.14.3\build\natives"/>
+      <env name="FORGE_GROUP" value="net.minecraftforge"/>
+      <env name="target" value="fmluserdevclient"/>
+      <env name="MC_VERSION" value="1.14.3"/>
+    </envs>
+    <method v="2">
+      <option enabled="true" name="Make"/>
+      <option enabled="true" externalProjectPath="$PROJECT_DIR$" name="Gradle.BeforeRunTask" tasks=":prepareRunClient"/>
+    </method>
+  </configuration>
+</component>
