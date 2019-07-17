@@ -1,6 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "mcjtytutorial:block/firstblock"
+    "particle": "mcjtytutorial:block/firstblock",
+    "down": "mcjtytutorial:block/firstblock",
+    "up": "mcjtytutorial:block/firstblock",
+    "east": "mcjtytutorial:block/firstblock",
+    "west": "mcjtytutorial:block/firstblock",
+    "north": "mcjtytutorial:block/firstblock_front",
+    "south": "mcjtytutorial:block/firstblock"
   }
 }

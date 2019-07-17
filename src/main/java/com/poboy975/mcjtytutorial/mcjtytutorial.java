@@ -1,6 +1,7 @@
 package com.poboy975.mcjtytutorial;
 
 import com.poboy975.mcjtytutorial.blocks.FirstBlock;
+import com.poboy975.mcjtytutorial.blocks.FirstBlockTile;
 import com.poboy975.mcjtytutorial.blocks.ModBlocks;
 import com.poboy975.mcjtytutorial.items.FirstItem;
 import com.poboy975.mcjtytutorial.setup.ClientProxy;
@@ -11,6 +12,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -66,6 +68,10 @@ public class mcjtytutorial {
                     .group(setup.itemgroup);
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("firstblock"));
             event.getRegistry().register((new FirstItem()));
+        }
+        @SubscribeEvent
+        public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event){
+            event.getRegistry().register(TileEntityType.Builder.create(() -> new FirstBlockTile(), ModBlocks.FIRSTBLOCK).build(null).setRegistryName("firstblock"));
         }
     }
 }

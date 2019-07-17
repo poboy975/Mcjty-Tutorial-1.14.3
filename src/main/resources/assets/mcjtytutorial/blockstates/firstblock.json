@@ -1,5 +1,16 @@
 {
   "variants": {
-    "": { "model": "mcjtytutorial:block/firstblock"}
+    "facing=north": { "model": "mcjtytutorial:block/firstblock" },
+    "facing=south": { "model": "mcjtytutorial:block/firstblock", "y": 180 },
+    "facing=west": { "model": "mcjtytutorial:block/firstblock", "y": 270 },
+    "facing=east": { "model": "mcjtytutorial:block/firstblock", "y": 90 },
+    "facing=up": { "model": "mcjtytutorial:block/firstblock", "x": -90 },
+    "facing=down": { "model": "mcjtytutorial:block/firstblock", "x": 90 }
+    //"facing=north": { "model": "mcjtytutorial:block/firstblock_powered" },
+    //"facing=south": { "model": "mcjtytutorial:block/firstblock_powered", "y": 180 },
+    //"facing=west": { "model": "mcjtytutorial:block/firstblock_powered", "y": 270 },
+    //"facing=east": { "model": "mcjtytutorial:block/firstblock_powered", "y": 90 },
+    //"facing=up": { "model": "mcjtytutorial:block/firstblock_powered", "x": -90 },
+    //"facing=down": { "model": "mcjtytutorial:block/firstblock_powered", "x": 90 }
   }
 }
