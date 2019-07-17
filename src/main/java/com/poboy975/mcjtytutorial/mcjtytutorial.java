@@ -4,6 +4,7 @@ import com.poboy975.mcjtytutorial.blocks.FirstBlock;
 import com.poboy975.mcjtytutorial.blocks.ModBlocks;
 import com.poboy975.mcjtytutorial.setup.ClientProxy;
 import com.poboy975.mcjtytutorial.setup.IProxy;
+import com.poboy975.mcjtytutorial.setup.ModSetup;
 import com.poboy975.mcjtytutorial.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -32,6 +33,8 @@ public class mcjtytutorial {
 
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
+    public static ModSetup setup = new ModSetup();
+
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
@@ -41,6 +44,8 @@ public class mcjtytutorial {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
+        setup.init();
+        proxy.init();
     }
 
     // You can use EventBusSubscriber to automatically subscribe events on the contained class (this is subscribing to the MOD
@@ -56,7 +61,9 @@ public class mcjtytutorial {
         // creates the item registry for keeping item in inventory
         @SubscribeEvent
         public static void onItemsRegistry(final RegistryEvent.Register<Item> event) {
-            event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, new Item.Properties()).setRegistryName("firstblock"));
+            Item.Properties properties = new Item.Properties()
+                    .group(setup.itemgroup);
+            event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("firstblock"));
 
         }
     }

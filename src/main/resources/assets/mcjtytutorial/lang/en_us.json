@@ -1,2 +1,6 @@
 {
-  "block.mcjtytutorial.firstblock": "First Block"}
+  "block.mcjtytutorial.firstblock": "First Block",
+  
+  "_comment": "Creative Tabs",
+  "itemGroup.mcjtytutorial": "Tutorial"
+}
