@@ -2,6 +2,7 @@ package com.poboy975.mcjtytutorial;
 
 import com.poboy975.mcjtytutorial.blocks.FirstBlock;
 import com.poboy975.mcjtytutorial.blocks.ModBlocks;
+import com.poboy975.mcjtytutorial.items.FirstItem;
 import com.poboy975.mcjtytutorial.setup.ClientProxy;
 import com.poboy975.mcjtytutorial.setup.IProxy;
 import com.poboy975.mcjtytutorial.setup.ModSetup;
@@ -64,7 +65,7 @@ public class mcjtytutorial {
             Item.Properties properties = new Item.Properties()
                     .group(setup.itemgroup);
             event.getRegistry().register(new BlockItem(ModBlocks.FIRSTBLOCK, properties).setRegistryName("firstblock"));
-
+            event.getRegistry().register((new FirstItem()));
         }
     }
 }
