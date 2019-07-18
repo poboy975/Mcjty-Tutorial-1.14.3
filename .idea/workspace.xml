@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67d3ac29-8ea7-4ecc-872d-60b58f04660e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/assets/mcjtytutorial/textures/gui/gui.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/FirstBlockContainer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/FirstBlockScreen.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.9/fileContent/fileContent.lock" afterPath="$PROJECT_DIR$/.gradle/4.9/fileContent/fileContent.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.9/fileHashes/fileHashes.lock" />
@@ -12,15 +9,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.9/taskHistory/taskHistory.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run/logs/debug.log" afterPath="$PROJECT_DIR$/run/logs/debug.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run/logs/latest.log" afterPath="$PROJECT_DIR$/run/logs/latest.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/FirstBlock.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/FirstBlock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/FirstBlockTile.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/FirstBlockTile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/ModBlocks.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/blocks/ModBlocks.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/mcjtytutorial.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/mcjtytutorial.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/setup/ClientProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/setup/ClientProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/setup/IProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/setup/IProxy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/setup/ServerProxy.java" afterPath="$PROJECT_DIR$/src/main/java/com/poboy975/mcjtytutorial/setup/ServerProxy.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -1317,7 +1305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563408787392</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Corrected lazyoption, so it's properly cached now">
+      <created>1563419319736</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563419319736</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
