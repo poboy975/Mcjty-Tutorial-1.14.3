@@ -2,6 +2,7 @@ package com.poboy975.mcjtytutorial.blocks;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.poboy975.mcjtytutorial.mcjtytutorial;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.ResourceLoadProgressGui;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.entity.player.PlayerInventory;
@@ -24,6 +25,7 @@ public class FirstBlockScreen extends ContainerScreen<FirstBlockContainer> {
     }
 
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY) {
+        drawString(Minecraft.getInstance().fontRenderer, "Energy: " + container.getEnergy(), 10, 10, 0xffffff);
     }
 
     protected void drawGuiContainerBackgroundLayer(float partialTicks, int mouseX, int mouseY) {
