@@ -1,6 +1,7 @@
 package com.poboy975.mcjtytutorial;
 
 import com.poboy975.mcjtytutorial.blocks.FirstBlock;
+import com.poboy975.mcjtytutorial.blocks.FirstBlockContainer;
 import com.poboy975.mcjtytutorial.blocks.FirstBlockTile;
 import com.poboy975.mcjtytutorial.blocks.ModBlocks;
 import com.poboy975.mcjtytutorial.items.FirstItem;
@@ -10,10 +11,14 @@ import com.poboy975.mcjtytutorial.setup.ModSetup;
 import com.poboy975.mcjtytutorial.setup.ServerProxy;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.inventory.container.Container;
+import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntityType;
+import net.minecraft.util.math.BlockPos;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.DistExecutor;
@@ -33,6 +38,8 @@ import java.util.stream.Collectors;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod("mcjtytutorial")
 public class mcjtytutorial {
+
+    public static final String MODID = "mcjtytutorial";
 
     public static IProxy proxy = DistExecutor.runForDist(() -> () -> new ClientProxy(), () -> () -> new ServerProxy());
 
@@ -72,6 +79,14 @@ public class mcjtytutorial {
         @SubscribeEvent
         public static void onTileEntityRegistry(final RegistryEvent.Register<TileEntityType<?>> event){
             event.getRegistry().register(TileEntityType.Builder.create(() -> new FirstBlockTile(), ModBlocks.FIRSTBLOCK).build(null).setRegistryName("firstblock"));
+        }
+
+        @SubscribeEvent
+        public static void onContainerRegistry(final RegistryEvent.Register<ContainerType<?>> event) {
+            event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
+                BlockPos pos = data.readBlockPos();
+                return new FirstBlockContainer(windowId, mcjtytutorial.proxy.getClientWorld(), pos, inv, mcjtytutorial.proxy.getClientPlayer());
+            }).setRegistryName("firstblock"));
         }
     }
 }
