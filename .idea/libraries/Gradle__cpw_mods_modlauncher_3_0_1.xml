@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/3.0.1/46436918ed04153b182e0b233c83dd5bb60e7d83/modlauncher-3.0.1.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/3.0.1/6e8d195990e1017afd50967460cff71f4fb08f2d/modlauncher-3.0.1-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

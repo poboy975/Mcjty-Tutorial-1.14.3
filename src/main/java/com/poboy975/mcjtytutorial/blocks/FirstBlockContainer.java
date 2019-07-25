@@ -40,7 +40,7 @@ public class FirstBlockContainer extends Container {
         });
         layoutPlayerInventorySlots(8, 84); // top left coords of start of player inventory
 
-        func_216958_a(new IntReferenceHolder() {
+        trackInt(new IntReferenceHolder() {
             @Override
             public int get() {
                 return getEnergy();

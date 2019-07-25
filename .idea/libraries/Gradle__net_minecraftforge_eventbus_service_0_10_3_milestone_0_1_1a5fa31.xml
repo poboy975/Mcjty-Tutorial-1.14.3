@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/0.10.3-milestone.0.1+1a5fa31/568b9d2fc8a1c4435c50bfc5a184ee279b2a31f5/eventbus-0.10.3-milestone.0.1+1a5fa31-service.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/0.10.3-milestone.0.1+1a5fa31/16d31883ea3e5d43bbabe78109012947f27a85da/eventbus-0.10.3-milestone.0.1+1a5fa31-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

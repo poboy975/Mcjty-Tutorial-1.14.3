@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/0.6.3-milestone.0.4+c1d1f08/9a59b6225a37c2e03f6f394c5a32a8932fa2d6c4/coremods-0.6.3-milestone.0.4+c1d1f08.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/0.6.3-milestone.0.4+c1d1f08/c17aa03206777148647cbc2dc0ce91adcf3de716/coremods-0.6.3-milestone.0.4+c1d1f08-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

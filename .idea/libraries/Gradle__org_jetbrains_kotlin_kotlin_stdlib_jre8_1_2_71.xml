@@ -4,6 +4,8 @@
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre8/1.2.71/ef662c1fea4d5060a45d6beb0f063be7fc14d92/kotlin-stdlib-jre8-1.2.71.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre8/1.2.71/3ce46ba1d4a0fbaea541840505cf9709825551e6/kotlin-stdlib-jre8-1.2.71-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
